@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esa Utama</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        #aboutTabsContent {
+          min-height: 250px; /* atau lebih tinggi sesuai kebutuhan */
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-3 mb-5">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Esa_Utama</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" id="nav-home" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="nav-about" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="nav-portfolio" href="#portfolio">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="nav-contact" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="py-3" data-aos="fade-up">
+            <div class="container mt-2">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-8">
+                        <button class="btn btn-outline-dark btn-sm fw-bold mb-2">Hi There!</button>
+                        <h1 class="">I am Esa Tegar Putra Utama</h1>
+                        <h2><span id="typed"></span></h2>
+                        <p class="mb-3">
+                          A tech enthusiast who loves building websites, exploring new ideas, and turning imagination into reality. Always excited to learn and grow every day.
+                        </p>
+                        <div class="d-flex gap-2 mb-3">
+                            <a href="https://www.linkedin.com/in/esa-tegar-putra-utama-78b861300/" class="btn btn-primary btn-sm">Hire me ⭢</a>
+                            <a href="portfolio.html" class="btn btn-outline-primary btn-sm">View Portfolio ⭢</a>
+                        </div>
+                        <div class="d-flex gap-3 mb-3">
+                            <a href="" class="text-dark text-decoration-none fw-bold">● Instagram</a>
+                            <a href="" class="text-dark text-decoration-none fw-bold">● Tiktok</a>
+                            <a href="" class="text-dark text-decoration-none fw-bold">● LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="py-5 bg-light" data-aos="fade-up">
+          <div class="container my-3">
+            <div class="row justify-content-center">
+              <div class="col-md-5 text-center my-2">
+                <img src="assets/foto_esa.jpg" class="img-fluid rounded-3 shadow" alt="Profile Photo" style="max-width:100%; height:auto;">
+              </div>
+              <div class="col-md-5 my-2">
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-tabs mb-3" id="aboutTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-bold" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-content" type="button" role="tab">ABOUT ME</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-content" type="button" role="tab">SKILLS</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-content" type="button" role="tab">EXPERIENCE</button>
+                  </li>
+                </ul>
+        
+                <!-- Tab Content -->
+                <div class="tab-content" id="aboutTabsContent">
+                  <div class="tab-pane fade show active" id="about-content" role="tabpanel">
+                    <h2 class="mb-3">About Me</h2>
+                    <p>A graduate of SMK Negeri 10 Jakarta majoring in Software Engineering. During my studies, I actively developed skills in information technology, particularly in programming and software development. I also gained experience through school projects and internships, enhancing my practical knowledge and teamwork abilities.</p>
+                    <h5 class="mb-3 fw-bold">Passionate Developer since 18 y.o</h5>
+                    <p>I've built various websites including e-commerce platforms, financial technology systems, digital wallets, simulation apps, web-based games, and also worked on graphic design projects such as posters, logos, and brochures.
+                  </p>
+                  </div>
+        
+                  <div class="tab-pane fade" id="skills-content" role="tabpanel">
+                    <h2 class="mb-3">My Skills</h2>
+                    <ul>
+                      <li><span class="fw-bold">Languages:</span>  Indonesian (Native), English (Intermediate)</li>
+                      <li><span class="fw-bold">Web Development:</span> Laravel, Bootstrap, Tailwind CSS</li>
+                      <li><span class="fw-bold">Mobile Development:</span> Flutter</li>
+                      <li><span class="fw-bold">Design Tools:</span> Canva, Figma, Adobe Illustrator</li>
+                    </ul>
+                    <h2 class="mb-3">My Certificate</h2>
+                    <h5 class="fw-bold">Internship Certificate – PT. NMGA</h5>
+                    <p class="">Developer, PT Nagatama | September 01, 2024 - March 04, 2025</p>
+                  </div>
+        
+                  <div class="tab-pane fade" id="experience-content" role="tabpanel">
+                    <h2 class="mb-3">My Experience</h2>
+                    <h5 class="fw-bold">Internship, PT. Nagatama</h5>
+                    <p class=""><span class="fw-bold">Duration :</span> 6 month</p>
+                    <ul>
+                      <li>Developed and managed a Laravel-based back office rental website, including features for product, user, transaction, and report management.</li>
+                      <li>Conducted analysis and implemented Entity Relationship Diagrams (ERD) to support the database structure of the rental system.</li>
+                    </ul>
+                    <h5 class="fw-bold">Treasurer, Islamic Spiritual Organization – SMKN 10 Jakarta</h5>
+                    <ul>
+                      <li>Managed the cash finances of the Islamic Spiritual Organization (Rohis).</li>
+                      <li>Calculated and recorded student charity funds at SMKN 10 Jakarta.</li>
+                    </ul>
+                    <h5 class="fw-bold">Trainer, Information Technology Club – SMKN 10 Jakarta</h5>
+                    <ul>
+                      <li>Teaching the basics of graphic design using Canva and Figma.</li>
+                      <li>Teaching the basics of website programming with HTML and CSS.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="py-5" data-aos="fade-up">
+          <div class="container my-3">
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <h2 class="text-center mb-4 fw-bold">My Portfolio</h2>
+        
+                <!-- Tabs Menu -->
+                <ul class="nav nav-tabs justify-content-center mb-4" id="portfolioTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design" type="button" role="tab">🎨 Design Graphic</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab">💻 Website</button>
+                  </li>
+                </ul>
+            
+                <!-- Tabs Content -->
+                <div class="tab-content mb-3" id="portfolioTabContent">
+                  <!-- Design Graphic Tab -->
+                  <div class="tab-pane fade show active" id="design" role="tabpanel">
+                    <div class="text-center">
+                      <h4 class="mb-3">My Graphic Design Works</h4>
+                      <div class="row justify-content-center">
+                        <div class="col-md-4">
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <iframe src="assets/pdf/Labeling dan Packaging.pdf" width="100%" height="150px" style="border:none;"></iframe>
+                              <a href="assets/pdf/Labeling dan Packaging.pdf" download class="btn btn-primary mt-3">⬇️ Download PDF</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <iframe src="assets/pdf/HAKI by Esa Tegar Putra Utama.pdf" width="100%" height="150px" style="border:none;"></iframe>
+                              <a href="assets/pdf/HAKI by Esa Tegar Putra Utama.pdf" download class="btn btn-primary mt-3">⬇️ Download PDF</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <iframe src="assets/poster/Ciptakan Pertanian Modern dan Inovasi by esa.jpg" width="100%" height="150px" style="border:none;"></iframe>
+                              <a href="assets/poster/Ciptakan Pertanian Modern dan Inovasi by esa.jpg" download class="btn btn-primary mt-3">⬇️ Download PDF</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Website Tab -->
+                  <div class="tab-pane fade" id="website" role="tabpanel">
+                    <div class="text-center">
+                      <h4 class="mb-3">Website Project Presentations</h4>
+                      <div class="row justify-content-center">
+                        <div class="col-md-4">
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <h5 class="card-title fw-bold">Valentine's Day Website</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">A Special Message for You</h6>
+                              <p>A heartfelt Valentine's greeting for someone truly special.</p>
+                              <a href="https://github.com/EsaTegarPutra/valentine" class="btn btn-primary btn-sm">View Code ⭢</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <h5 class="card-title fw-bold">SekolahKu News</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">Latest Updates and Stories</h6>
+                              <p>Stay informed with the latest happenings and events.</p>
+                              <a href="https://github.com/EsaTegarPutra/sekolahku" class="btn btn-primary btn-sm">View Code ⭢</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <h5 class="card-title fw-bold">DriveGuard Simulation</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">Experience Safe Driving</h6>
+                              <p>Learn and practice safe driving techniques through simulation.</p>
+                              <a href="https://github.com/EsaTegarPutra/simulasi-driveguard" class="btn btn-primary btn-sm">View Code ⭢</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Show More -->
+                <div class="text-center mb-3">
+                  <a href="portfolio.html" class="btn btn-outline-primary btn-lg rounded-pill px-5 shadow-sm">
+                    Show More Projects ⭢
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+            
+        <section id="contact" class="bg-dark" data-aos="fade-up">
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+            <footer
+                class="text-center text-lg-start text-white bg-dark"
+                >
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row justify-content-center">
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Esa_Utama
+                  </h6>
+                  <p class="fst-italic">
+                    "Dreams do not come true without hard work, perseverance, and belief. Every small step taken today lays the foundation for achieving great victories in the future."
+                  </p>
+                  <p class="fw-bold">
+                    — Esa Tegar Putra Utama | 2025
+                  </p>              
+                </div>
+                
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Menu
+                  </h6>
+                  <p>
+                    <a href="#home" class="text-white">Home</a>
+                  </p>
+                  <p>
+                    <a href="#about" class="text-white">About me</a>
+                  </p>
+                  <p>
+                    <a href="portfolio.html" class="text-white">My Portfolio</a>
+                  </p>
+                  <p>
+                    <a href="help.html" class="text-white">Help</a>
+                  </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                  <p><i class="fas fa-home mr-3"></i> Senopati Dalam II Street, No. 1A, South Jakarta, Indonesia
+                  <p><i class="fas fa-envelope mr-3"></i> tegaresautama17@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 62 877 2795 9318</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 62 813 1744 3518</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-3">
+
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+              <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                  <!-- Copyright -->
+                  <div class="p-3">
+                    © 2025 Copyright:
+                    <a class="text-white text-decoration-none" href=""
+                      >Esa Tegar Putra Utama</a
+                      >
+                  </div>
+                  <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                  <!-- Facebook -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button" href="https://www.linkedin.com/in/esa-tegar-putra-utama-78b861300/"
+                    ><i class="fab fa-linkedin"></i
+                    ></a>
+
+                  <!-- Twitter -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button" href="https://github.com/EsaTegarPutra"
+                    ><i class="fab fa-github"></i
+                    ></a>
+
+                  <!-- Google -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button" href="mailto:tegaresautama17@gmail.com?subject=Ini%20adalah%20judul%20email%20default"
+                    ><i class="fab fa-google"></i
+                    ></a>
+
+                  <!-- Instagram -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button" href="https://www.instagram.com/etpu_1703"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+                <!-- Grid column -->
+              </div>
+            </section>
+            <!-- Section: Copyright -->
+            </div>
+            <!-- Grid container -->
+            </footer>
+            <!-- Footer -->
+        </section>
+    </main>
+
+    
+    
+    <!-- Place this before </body> -->
+    <button id="back-to-top-btn" onclick="topFunction()">
+        <i class="fa fa-arrow-up"></i>
+    </button>          
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+      AOS.init({
+        once: false, // supaya animasi bisa aktif terus setiap muncul
+      });
+
+      var typed = new Typed('#typed', {
+        strings: ["A Web Developer", "A Graphic Designer", "A Dreamer"],
+        typeSpeed: 70,
+        backSpeed: 50,
+        loop: true
+      });
+    </script>
+
+</body>
+</html>
